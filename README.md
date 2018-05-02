@@ -4,6 +4,7 @@ EventFolder is a logistical directory for event needs. It centralizes data of ve
 
 To run:
 - 'python manage.py runserver'
+- Application runs best on Google Chrome.
 
 To add new data:
 1. Go to http://127.0.0.1:8000/admin
