@@ -1,0 +1,50 @@
+<!-- eventfoldersrc/templates/caterings.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EventFolder - Catering Services</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <link href="{% static 'images/icon.ico' %}" rel="icon">
+        <link href="{% static 'images/icon.ico' %}" rel="shortcut icon">
+    </head>
+    <body>
+    	<script src="{% static 'js/scripts.js' %}"></script>
+    	<header id="panel">
+		  		<a href="/">
+		  			<img src="{% static 'images/icon_eventfolder.png' %}" alt="Event Folder Icon">
+		  		</a>
+		  		<div id="links">
+		  			<div><a href="/venues/"><h4>Venues</h4></a></div>
+			  		<div class="selected_page"><a href="/caterings/"><h4>Catering Services</h4></a></div>
+			  		<div><a href="/lightssounds/"><h4>Lights and Sounds</h4></a></div>
+		  		</div>
+		</header>
+		<main class="content list">
+			{% if caterings_list %}
+			    {% for catering in caterings_list %}
+			        <div class="catalog_item">
+				        <div class="item_image"><img src="{{ catering.image_url }}"></div>
+				        <div class="item_desc">
+				        	<h3>{{ catering.name }}</h3>
+				        	<h4>{{ catering.city }}</h4>
+				        	<h5>{{ catering.address }}</h5>
+				        	<h5>{{ catering.contact_num }}</h5>
+				    	</div>
+				    	<div class="item_details_label">
+				    		<h5> RATES: </h5>
+				    		<h5> WEBSITE: </h5>
+				    	</div>
+				    	<div class="item_details">
+				    		<h5>{{ catering.rates }}</h5>
+				    		<a href="{{ catering.website }}"><h5>{{ catering.website }}</h5></a>
+				    	</div>
+			    	</div>
+			    {% endfor %}
+			{% else %}
+			    <p>No items are available.</p>
+			{% endif %}
+		</main>
+    </body>
+</html>

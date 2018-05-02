@@ -1,0 +1,39 @@
+<!-- eventfoldersrc/templates/index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>EventFolder</title>
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+        <link href="{% static 'images/icon.ico' %}" rel="icon">
+        <link href="{% static 'images/icon.ico' %}" rel="shortcut icon">
+    </head>
+    <body>
+    	<div id="container">
+			<header id="head">
+		  		<a id="title" href="/">
+		  			<img id="icon" src="{% static 'images/icon_eventfolder.png' %}" alt="Event Folder Icon">
+		  		</a>
+		  	</header>
+		  	<main>
+		  		<div>
+		  			<h1 id="landing-text">Discover the best resources for your event!</h1>
+		  		<div>
+		  		<div id="options">
+		  			<a href="/venues/">
+		  				<img id="homepage_venues" src="{% static 'images/homepage_venues.png' %}" alt="Venues">
+		  			</a>
+		  			<a href="caterings">
+		  				<img id="homepage_caterings" src="{% static 'images/homepage_caterings.png' %}" alt="Catering Services">
+		  			</a>
+		  			<a href="lightssounds">
+		  				<img id="homepage_lightssounds" src="{% static 'images/homepage_lightssounds.png' %}" alt="Lights & Sounds">
+		  			</a>
+		  		</div>
+		  	</main>
+		  	<footer>
+		  	</footer>
+		</div>
+    </body>
+</html>

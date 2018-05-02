@@ -1,0 +1,276 @@
+@font-face
+{
+	font-family: Aileron Black;
+	src: url('fonts/Aileron-Black.otf');
+}
+
+@font-face
+{
+	font-family: Aileron Heavy;
+	src: url('fonts/Aileron-Heavy.otf');
+}
+
+@font-face
+{
+	font-family: Aileron Regular;
+	src: url('fonts/Aileron-Regular.otf');
+}
+
+@font-face
+{
+	font-family: Aileron Light;
+	src: url('fonts/Aileron-Light.otf');
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #F7F9FA;
+	position: relative;
+}
+
+#container
+{
+	min-height: 100%;
+	position: relative;
+}
+
+header
+{
+	background: linear-gradient(90deg, #FE2211, #F75A21);
+	max-height: 3em;
+	width: 100%;
+	position: relative;
+/*	padding: 0.1em;*/
+	top: 0;
+	left: 0;
+	right: 0;
+/*	box-shadow: 1px 1px 15px #112A47;*/
+}
+
+#icon
+{
+	display: block;
+	max-width: 10em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+#panel
+{
+	display: flex;
+	color: #F7F9FA;
+	width: 100%;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	.sticky & {
+		position: fixed;
+	}
+}
+
+#panel img
+{
+	max-width: 10em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	margin-left: 8em;
+}
+
+#links
+{
+	display: flex;
+	margin-top: -0.5em;
+	margin-left: auto;
+	margin-right: 8em;
+}
+
+#links h4
+{
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+}
+
+#links div
+{
+	min-width: 10em;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+#links a
+{
+	color: #F7F9FA;
+	text-decoration: none;
+}
+
+#links div:hover
+{
+	border-bottom: 0.3em solid #A2BFE4;
+	margin-bottom: -0.1em;
+}
+
+.selected_page
+{
+	border-bottom: 0.3em solid #112A47;
+	margin-bottom: -0.1em;
+}
+
+h1, h3
+{
+	font-family: Aileron Black;
+}
+
+h4
+{
+	font-family: Aileron Heavy;
+}
+
+h5
+{
+	font-family: Aileron Regular;
+	margin-top: -1em;
+}
+
+h6
+{
+	font-family: Aileron Light;
+}
+
+
+main
+{
+	position: relative;
+	margin-top: 10em;
+	padding-bottom: 1em;
+}
+
+#landing-text
+{
+	text-align: center;
+	color: #112A47;
+}
+
+#options
+{
+	margin: 2em auto;
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+#options img
+{
+	max-width: 12em;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 2.1em;
+}
+
+#options img:hover
+{
+	box-shadow: 7px 7px 10px #112A47;
+	z-index: -1;
+}
+
+.content
+{
+	padding: 16px;
+}
+
+.list
+{
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	align-self: center;
+}
+
+.catalog_item
+{
+	border: 2px solid #A2BFE4;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: 2fr 5fr;
+	grid-template-rows: 5fr 3fr;
+	grid-template-areas: 
+	"item_image" "item_desc"
+	"item_details_label" "item_details"
+	max-height: 15em;
+	max-width: 40em;
+	padding: 1em;
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5em;
+}
+
+.item_image img
+{
+	object-fit: cover;
+	width: 8em;
+	height: 8em;
+}
+
+.item_desc
+{
+
+}
+
+.item_desc h3
+{
+	color: #F75A21;
+	padding-top: 0.3em;
+}
+
+.item_desc h4
+{
+	color: #112A47;
+	margin-top: -1em;
+}
+
+.item_desc h5
+{
+	color: #595959;
+}
+
+.item_details_label
+{
+	color: #595959;
+	margin-top: 1em;
+}
+
+.item_details
+{
+	color: #112A47;
+	margin-top: 1em;
+}
+
+.item_details a
+{
+	color: #112A47;
+	text-decoration: none;
+}
+
+.item_details a:hover
+{
+	color: #A2BFE4;
+}
+
+footer
+{
+	position: absolute;
+	bottom: 0; left: 0;
+	height: 1em;
+	width: 100%;
+	background: linear-gradient(90deg, #FE2211, #F75A21);
+}
