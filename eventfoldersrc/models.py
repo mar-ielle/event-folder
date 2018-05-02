@@ -5,7 +5,7 @@ from django.db import models
 class Venue(models.Model):
 	id = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=30)
-	image_url = models.CharField(max_length=100)
+	image_url = models.CharField(max_length=200)
 	city = models.CharField(max_length=30)
 	address = models.CharField(max_length=60)
 	contact_num = models.CharField(max_length=60)
@@ -19,7 +19,7 @@ class Venue(models.Model):
 class Catering(models.Model):
 	id = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=30)
-	image_url = models.CharField(max_length=100)
+	image_url = models.CharField(max_length=200)
 	city = models.CharField(max_length=30)
 	address = models.CharField(max_length=60)
 	contact_num = models.CharField(max_length=60)
@@ -32,7 +32,7 @@ class Catering(models.Model):
 class LightsAndSounds(models.Model):
 	id = models.AutoField(primary_key=True)
 	name = models.CharField(max_length=30)
-	image_url = models.CharField(max_length=100)
+	image_url = models.CharField(max_length=200)
 	city = models.CharField(max_length=30)
 	address = models.CharField(max_length=60)
 	contact_num = models.CharField(max_length=60)
