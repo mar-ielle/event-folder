@@ -3,7 +3,7 @@
 EventFolder is a logistical directory for event needs. It centralizes data of venues, catering services, and lights and sounds into one accessible system.
 
 To run:
-- 'python manage.py runserver'
+- `python manage.py runserver`
 - Application runs best on Google Chrome.
 
 To add new data:
